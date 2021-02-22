@@ -29,20 +29,20 @@
        (stretchability . 0))
 
 	top-system-spacing =
-    #'((basic-distance . 15)
-       (minimum-distance . 15)
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
        (padding . -100)
        (stretchability . 0))
 
 	top-markup-spacing =
-    #'((basic-distance . 3)
-       (minimum-distance . 3)
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
        (padding . -100)
        (stretchability . 0))
 
 	markup-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
        (padding . -100)
        (stretchability . 0))
 
@@ -476,7 +476,7 @@ bc =
 	\context {
 		\Score
 		\compressEmptyMeasures
-		\override BarNumber.break-visibility = #'#(#f #t #t)
+		% \override BarNumber.break-visibility = #'#(#f #t #t)
 	}
 	\context {
 		\StaffGroup
@@ -687,12 +687,15 @@ tocLabelLong = #(define-music-function
 
 
 tempoTeDeum = \tempoMarkup "Allegro di molto"
+tempoTeErgo = \tempoMarkup "[Tempo deest]"
+tempoEtRege = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/ob1.ly"
 \include "notes/ob2.ly"
 \include "notes/clno1.ly"
 \include "notes/clno2.ly"
+\include "notes/timp.ly"
 \include "notes/vl1.ly"
 \include "notes/vl2.ly"
 \include "notes/vla.ly"

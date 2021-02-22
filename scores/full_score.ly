@@ -2,10 +2,6 @@
 
 \include "../definitions.ly"
 
-\paper {
-	indent = 1\cm
-}
-
 #(set-global-staff-size 15.87)
 
 \book {
@@ -23,12 +19,17 @@
 					>>
 				>>
 				\new StaffGroup \with { \smallGroupDistance } <<
-					\set StaffGroup.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+					\set StaffGroup.instrumentName = \markup \center-column { "Clarino I, II" "in D" }
 					\new Staff <<
 						% \transpose c d
 						\partCombine \ClarinoI \ClarinoII
 					>>
 				>>
+				\new Staff \with { \smallStaffDistance } {
+					\set Staff.instrumentName = \markup \center-column { "Timpani" "in D–A" }
+					% \transpose c d
+					\Timpani
+				}
 				\new StaffGroup <<
 					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "Violino"
@@ -120,7 +121,7 @@
 				\new FiguredBass { \BassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			\midi { \tempo 4 = 110 }
 		}
 	}
 }
