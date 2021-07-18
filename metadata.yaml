@@ -1,0 +1,17 @@
+composer: Gassmann, Florian Leopold
+title: Te Deum
+id: (D-Dl Mus.2973-D-26)
+genre: hymn
+scoring: S, A, T, B (coro 1), S, A, T, B (coro 2), 2 ob, 2 clno (D), timp (D–A), 2 vl, vla, b, org
+sources:
+  1:
+    siglum: D-Dl
+    shelfmark: Mus.2973-D-26
+    type: manuscript copy
+    date: 1750–1764
+    rism: 212006126
+    url: http://digital.slub-dresden.de/id426255801
+github: gassmann-te-deum
+imslp: Te_Deum_(Gassmann,_Florian_Leopold)
+notes:
+
